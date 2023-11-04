@@ -12,10 +12,22 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import HomeIcon from '@mui/icons-material/Home';
+import AssessmentIcon from '@mui/icons-material/Assessment';
+import Person2Icon from '@mui/icons-material/Person2';
+import ClassIcon from '@mui/icons-material/Class';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import EventIcon from '@mui/icons-material/Event';
+import HolidayVillageIcon from '@mui/icons-material/HolidayVillage';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import FormatClearIcon from '@mui/icons-material/FormatClear';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import LogoutIcon from '@mui/icons-material/Logout';
+import Home from "./Home";
 
 const drawerWidth = 240;
 
@@ -32,29 +44,63 @@ function ResponsiveDrawer(props) {
       <Toolbar />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+
+      <ListItem  disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+               <HomeIcon />
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText >
+                Home
+              </ListItemText>
             </ListItemButton>
           </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+
+       <ListItem  disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+               <HomeIcon />
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText >
+                Leaderboard
+              </ListItemText>
             </ListItemButton>
-          </ListItem>
-        ))}
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <HomeIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Orders
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <HomeIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Home
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <HomeIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Home
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+        
       </List>
     </div>
   );
