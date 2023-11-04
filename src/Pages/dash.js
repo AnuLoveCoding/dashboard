@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Routes, Route} from "react-router-dom";
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -6,7 +7,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -84,7 +84,117 @@ function ResponsiveDrawer(props) {
                <HomeIcon />
               </ListItemIcon>
               <ListItemText >
-                Home
+                SalesReport
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <AssessmentIcon />
+              </ListItemIcon>
+              <ListItemText >
+                My Student Result
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <Person2Icon />
+              </ListItemIcon>
+              <ListItemText >
+                My Student 
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <ClassIcon />
+              </ListItemIcon>
+              <ListItemText >
+                My Classes 
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <AssignmentIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Assignment 
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <NotificationsNoneIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Notification
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <EventIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Events
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <HolidayVillageIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Holidays
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <LocalLibraryIcon />
+              </ListItemIcon>
+              <ListItemText >
+                My Student Result
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <FormatClearIcon />
+              </ListItemIcon>
+              <ListItemText >
+                My Syllabus
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <AccessTimeIcon />
+              </ListItemIcon>
+              <ListItemText >
+                My leave request
               </ListItemText>
             </ListItemButton>
        </ListItem>
@@ -95,7 +205,18 @@ function ResponsiveDrawer(props) {
                <HomeIcon />
               </ListItemIcon>
               <ListItemText >
-                Home
+                Daily Timing
+              </ListItemText>
+            </ListItemButton>
+       </ListItem>
+
+       <ListItem  disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+               <LogoutIcon />
+              </ListItemIcon>
+              <ListItemText >
+                Logout
               </ListItemText>
             </ListItemButton>
        </ListItem>
